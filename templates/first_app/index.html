@@ -1,16 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>First App</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-       <h1>Hello this is index.html</h1>
-       {{insert_me}}
-        <!-- <script src="" async defer></script> -->
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>BEAUTIFUL FLOWER</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+</head>
+<body>
+    <h1>Hi, this is a picture of a beautiful flower by Robertson!</h1>
+    <img src="{% static 'images/robertson.jpg' %}" alt="flower">
+</body>
 </html>
